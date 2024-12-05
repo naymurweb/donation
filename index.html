@@ -10,9 +10,34 @@
     <!-- tailwind css -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(180, 244, 97)',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body class="container mx-auto">
+    <!-- header navbar-->
+    <header class="flex flex-col md:flex-row items-center md:justify-between py-6 gap-5 md:gap-0">
+        <button class="btn bg-primary font-bold text-xl px-8 order-3 md:order-1">Blog</button>
+
+        <div class="flex items-center gap-3 order-1 md:order-2">
+            <img src="./assets/logo.png" alt="">
+            <h5 class="text-xl font-bold">Donate Bangladesh</h5>
+        </div>
+        <div class="flex items-center gap-3 order-2 md:order-3">
+            <img src="./assets/coin.png" alt="">
+            <h5 class="text-xl"><span>5500</span> BDT</h5>
+        </div>
+    </header>
 
 
 </body>
