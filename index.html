@@ -49,27 +49,38 @@
     <!-- donation -->
     <section class="my-20">
         <div class="text-center">
-            <button class="btn bg-primary font-bold md:text-xl text-lg px-8 ">Donation</button>
-            <button class="btn font-bold md:text-xl text-lg px-8 order-3">History</button>
+            <button class="btn bg-primary font-bold md:text-xl text-lg px-8" id="donation-btn">Donation</button>
+
+            <button class="btn font-bold md:text-xl text-lg px-8 order-3" id="history-btn">History</button>
+
+
+
 
             <!-- donation cards -->
+            <div id="con" class="hidden container mx-autom px-5">
+
+            </div>
             <main id="main" class="container mx-auto px-5">
-                <div class="card lg:card-side bg-base-100 shadow-xl border p-8 my-8">
+
+
+
+
+                <div class="card lg:card-side bg-base-100 shadow-xl border p-8 my-">
                     <figure>
                         <img src="./assets/noakhali.png" alt="Album" class="md:w-[522px] md:h-[389px] rounded-lg" />
                     </figure>
                     <div class="card-body lg:w-1/2">
                         <div class="md:text-left">
                             <button class="btn"><img class="w-5" src="./assets/coin.png" alt=""><span
-                                    id="donate">0</span> BDT</button>
+                                    id="donate-noakali">0</span> BDT</button>
                         </div>
-                        <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                        <h2 class="card-title" id="noakhali-title">Donate for Flood at Noakhali, Bangladesh</h2>
                         <p class="pra"> The recent floods in Noakhali have caused significant damage to homes
                             infrastructure. Your donation will help provide essential supplies and to those affected by
                             this disaster. Every contribution, big or small, makes difference. Please join us in
                             supporting the relief efforts and making a positive impact on the lives of those in need.
                         </p>
-                        <input id="input" type="text" placeholder="Write Donation Amount"
+                        <input id="noakhali-input" type="text" placeholder="Write Donation Amount"
                             class="input input-bordered w-full mb-4 " />
 
 
@@ -103,18 +114,36 @@
                     </figure>
                     <div class="card-body lg:w-1/2">
                         <div class="md:text-left">
-                            <button class="btn"><img class="w-5" src="./assets/coin.png" alt="">0 BDT</button>
+                            <button class="btn"><img class="w-5" src="./assets/coin.png" alt=""><span
+                                    id="donate-feni">600</span> BDT</button>
                         </div>
-                        <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                        <h2 class="card-title" id="feni-title">Donate for Flood Relief in Feni,Bangladesh</h2>
                         <p class="pra"> The recent floods in Noakhali have caused significant damage to homes
                             infrastructure. Your donation will help provide essential supplies and to those affected by
                             this disaster. Every contribution, big or small, makes difference. Please join us in
                             supporting the relief efforts and making a positive impact on the lives of those in need.
                         </p>
-                        <input type="text" placeholder="Write Donation Amount"
+                        <input id="feni-input" type="text" placeholder="Write Donation Amount"
                             class="input input-bordered w-full mb-4 " />
-                        <button class="btn bg-primary font-bold md:text-xl text-lg px-8 ">Donate Now</button>
+                        <label id="feni-donate" class="btn bg-primary font-bold md:text-xl text-lg px-8">Donate
+                            Now</label>
 
+
+                        <input type="checkbox" id="my_modal_6" class="modal-toggle " />
+                        <div class="modal" role="dialog">
+                            <div class="modal-box">
+                                <h3 class="text-4xl font-bold">Congrates!</h3>
+                                <div class="flex justify-center my-5">
+                                    <img class="w-16" src="./assets/coin.png" alt="">
+
+                                </div>
+                                <p class="py-4">This modal works with a hidden checkbox!</p>
+                                <h2 class="font-bold text-3xl">Successfully</h2>
+                                <div class="modal-action">
+                                    <label for="my_modal_6" class="btn">Close!</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -126,18 +155,36 @@
                     </figure>
                     <div class="card-body lg:w-1/2">
                         <div class="md:text-left">
-                            <button class="btn"><img class="w-5" src="./assets/coin.png" alt="">0 BDT</button>
+                            <button class="btn"><img class="w-5" src="./assets/coin.png" alt=""><span
+                                    id="donate-aid">2400</span> BDT</button>
                         </div>
-                        <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+                        <h2 class="card-title" id="aid-title">Aid for Injured in the Quota Movement</h2>
                         <p class="pra"> The recent floods in Noakhali have caused significant damage to homes
                             infrastructure. Your donation will help provide essential supplies and to those affected by
                             this disaster. Every contribution, big or small, makes difference. Please join us in
                             supporting the relief efforts and making a positive impact on the lives of those in need.
                         </p>
-                        <input type="text" placeholder="Write Donation Amount"
+                        <input id="aid-input" type="text" placeholder="Write Donation Amount"
                             class="input input-bordered w-full mb-4 " />
-                        <button class="btn bg-primary font-bold md:text-xl text-lg px-8 ">Donate Now</button>
+                        <label id="aid-donate" class="btn bg-primary font-bold md:text-xl text-lg px-8">Donate
+                            Now</label>
 
+
+                        <input type="checkbox" id="my_modal_6" class="modal-toggle " />
+                        <div class="modal" role="dialog">
+                            <div class="modal-box">
+                                <h3 class="text-4xl font-bold">Congrates!</h3>
+                                <div class="flex justify-center my-5">
+                                    <img class="w-16" src="./assets/coin.png" alt="">
+
+                                </div>
+                                <p class="py-4">This modal works with a hidden checkbox!</p>
+                                <h2 class="font-bold text-3xl">Successfully</h2>
+                                <div class="modal-action">
+                                    <label for="my_modal_6" class="btn">Close!</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -147,14 +194,12 @@
 
     </section>
 
+    <!-- footer -->
     <footer class="bg-[#F9F7F3] h-72 w-full max-w-full mx-auto">
-
-
-
-
     </footer>
 
     <!-- js fils add -->
+    <script src="./js/utilities.js"></script>
     <script src="./js/donation.js"></script>
 
 </body>
